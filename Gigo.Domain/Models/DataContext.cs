@@ -8,6 +8,7 @@ namespace Gigo.Domain.Models
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Gigo.Common.Models;
     public class DataContext:DbContext
     {
 
@@ -16,6 +17,6 @@ namespace Gigo.Domain.Models
 
         }
 
-        public System.Data.Entity.DbSet<Gigo.Common.Models.Product> Products { get; set; }
+        public System.Data.Entity.DbSet<Product> Products { get; set; }
     }
 }

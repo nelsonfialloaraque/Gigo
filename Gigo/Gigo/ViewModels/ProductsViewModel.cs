@@ -12,7 +12,7 @@ namespace Gigo.ViewModels
     using Xamarin.Forms;
     public  class ProductsViewModel:BaseViewModel
     {
-        private ApiService apiService;
+        private readonly ApiService apiService;
         private ObservableCollection<Product> products;
         public ObservableCollection<Product> Productos
         {

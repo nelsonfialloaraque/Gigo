@@ -7,8 +7,9 @@ namespace Gigo.Backend.Models
     using System.Collections.Generic;
     using System.Linq;
     using System.Web;
+    using Gigo.Common.Models;
     public class LocalDataContext: DataContext
     {
-        public System.Data.Entity.DbSet<Gigo.Common.Models.Product> Products { get; set; }
+        public System.Data.Entity.DbSet<Product> Products { get; set; }
     }
 }
